@@ -30,9 +30,19 @@
                   <input type="checkbox" value="remember-me"> Remember me
                 </label>
               </div>
-              <button id="button-signin" class="w-100 btn btn-lg btn-primary " type="submit">Siguiente</button>
+              <button id="button-signin" class="w-100 btn btn-lg btn-primary " type="submit"  onclick="openTab('./html/Home.html')">Siguiente</button>
               <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
             </form>
           </main>
+
+        <script>
+          function openTab(url) {
+            const link = document.createElement('a');
+            link.href = url;
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+          }
+          </script> 
     </body>
 </html>
